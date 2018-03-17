@@ -15,6 +15,6 @@
 
 > TailChopping Router(Pool,Group) > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/routing/TailChoppingRouting)
 
-> ConsistenHashing Router(Pool,Group) > no example, but u can read it [here](https://doc.akka.io/docs/akka/2.5/routing.html#consistenthashingpool-and-consistenthashinggroup)
+> ConsistentHashing Router(Pool,Group) > no example, but u can read it [here](https://doc.akka.io/docs/akka/2.5/routing.html#consistenthashingpool-and-consistenthashinggroup)
 
 In every example u can find code and conf version of implementation.
