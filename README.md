@@ -18,3 +18,10 @@
 > ConsistentHashing Router(Pool,Group) > no example, but u can read it [here](https://doc.akka.io/docs/akka/2.5/routing.html#consistenthashingpool-and-consistenthashinggroup)
 
 In every example u can find code and conf version of implementation.
+
+### Replacing actor stack behavior
+> via **Become-Unbecome-Stash** > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/behavior/become/unbecome/stash)
+
+Read more about **Become/Unbecome** [here](https://doc.akka.io/docs/akka/2.5/actors.html#become-unbecome) and about **Stash** [here](https://doc.akka.io/docs/akka/2.5/actors.html#stash)
+
+> via **FSM** [doc](https://doc.akka.io/docs/akka/2.5/fsm.html#fsm) [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/behavior/fsm)
