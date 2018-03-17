@@ -4,7 +4,7 @@ import akka.actor.{ActorSystem, Props}
 import behavior.fsm.UserStorage.{Connect, DBOperation, Disconnect, Operation}
 
 object FSMBehaviorApp extends App {
-  val system = ActorSystem("Hotswap-Become")
+  val system = ActorSystem("FSM")
   val userStorage = system.actorOf(Props[UserStorage],"userStorage")
 
   userStorage ! "Something strange"
