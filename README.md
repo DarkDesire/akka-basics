@@ -41,3 +41,6 @@ ___
 > ReporterApp > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/persistent/query) 
 // reading events from previous created persistent fsm actor **Bank Account FSM**
 ___
+
+### Remoting [read here](https://doc.akka.io/docs/akka/current/remoting.html?language=scala)
+> Simple Remoting Example > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/remoting)
