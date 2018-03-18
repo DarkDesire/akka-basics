@@ -32,11 +32,11 @@ ___
 
 > CounterActor > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/persistent/counter)
 
-#### Persistent FSM [read here](https://doc.akka.io/docs/akka/current/persistence.html#persistent-fsm)
+#### + Persistent FSM [read here](https://doc.akka.io/docs/akka/current/persistence.html#persistent-fsm)
 
 > Bank Account FSM > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/persistent/fsm)
 
-#### Persistence Query [read here](https://doc.akka.io/docs/akka/current/persistence-query.html#persistence-query)
+#### + Persistence Query [read here](https://doc.akka.io/docs/akka/current/persistence-query.html#persistence-query)
 
 > ReporterApp > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/persistent/query) 
 // reading events from previous created persistent fsm actor **Bank Account FSM**
