@@ -4,7 +4,7 @@ import akka.actor.{ActorSystem, Props}
 import akka.routing.{FromConfig, ScatterGatherFirstCompletedPool}
 import akka.util.Timeout
 import routing.Worker
-import routing.Worker.{Work, WorkResult, WorkWithResult}
+import routing.Worker.{WorkResult, WorkWithResult}
 import akka.pattern.ask
 
 import scala.concurrent.ExecutionContextExecutor

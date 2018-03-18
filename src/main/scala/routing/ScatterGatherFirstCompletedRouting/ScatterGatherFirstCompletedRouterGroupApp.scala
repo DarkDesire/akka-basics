@@ -1,10 +1,9 @@
 package routing.ScatterGatherFirstCompletedRouting
 
 import akka.actor.{ActorSystem, Props}
-import akka.routing.{FromConfig, ScatterGatherFirstCompletedGroup, ScatterGatherFirstCompletedPool}
-import routing.RandomRouting.RandomRouterGroupApp.system
+import akka.routing.{FromConfig, ScatterGatherFirstCompletedGroup}
 import routing.Worker
-import routing.Worker.{Work, WorkResult, WorkWithResult}
+import routing.Worker.{WorkResult, WorkWithResult}
 import akka.pattern.ask
 import akka.util.Timeout
 

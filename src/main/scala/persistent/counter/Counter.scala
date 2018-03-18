@@ -1,7 +1,7 @@
-package persistence.counter
+package persistent.counter
 
 import akka.actor.ActorLogging
-import akka.persistence.{PersistentActor, SnapshotOffer}
+import akka.persistence._
 
 object Counter {
 
@@ -28,16 +28,20 @@ class Counter extends PersistentActor with ActorLogging {
   log.debug("Starting ...")
 
   // Persistent Identifier
-  override def persistenceId: String = "sample-id-18-03-2018"
+  override def persistenceId: String = "sample-id-18-03-2018-2"
 
   var state = State(count = 0)
 
-  def updateState(evt: Evt) = evt match {
+  def updateState(evt: Evt): Unit = evt match {
     case Evt(Increment(count)) =>
       state = State(count = state.count + count)
+      takeSnapshot()
     case Evt(Decrement(count)) =>
       state = State(count = state.count - count)
+      takeSnapshot()
   }
+
+  // override def recovery: Recovery = Recovery.none
 
   // Persistent receive in recovery mood
   override def receiveRecover: Receive = {
@@ -47,6 +51,18 @@ class Counter extends PersistentActor with ActorLogging {
     case SnapshotOffer(_, snapshot: State) =>
       log.debug(s"Counter: receive snapshot with data $snapshot on recovering mood")
       state = snapshot
+    case RecoveryCompleted =>
+      log.debug("Recovery completed and now I'll switch to normal receiving mode")
+    case SaveSnapshotSuccess(_) =>
+      log.debug("Save snapshot succeed.")
+    case SaveSnapshotFailure(_, cause) =>
+      log.debug(s"Save snapshot failed and failure is $cause.")
+  }
+
+  def takeSnapshot(): Unit = {
+    if(state.count % 5 == 0){
+      saveSnapshot(state)
+    }
   }
 
   // Persistent receive in normal mood

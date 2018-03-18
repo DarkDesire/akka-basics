@@ -2,9 +2,8 @@ package routing.SmallestMailboxRouting
 
 import akka.actor.{ActorSystem, Props}
 import akka.routing.{FromConfig, SmallestMailboxPool}
-import routing.RandomRouting.RandomRouterGroupApp.system
 import routing.Worker
-import routing.Worker.{Work, WorkHard}
+import routing.Worker.WorkHard
 
 /**
   * A Router that tries to send to the non-suspended child routee with fewest messages in mailbox.
