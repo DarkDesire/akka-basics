@@ -39,5 +39,4 @@ ___
 #### Persistence Query [read here](https://doc.akka.io/docs/akka/current/persistence-query.html#persistence-query)
 
 > ReporterApp > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/persistent/query) 
-
 // reading events from previous created persistent fsm actor **Bank Account FSM**
