@@ -24,6 +24,8 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-actor" % Versions.akka,
       "com.typesafe.akka" %% "akka-testkit" % Versions.akka % Test,
 
+      "com.typesafe.akka" %% "akka-remote" % Versions.akka,
+
       "com.typesafe.akka" %% "akka-http" % Versions.http,
       "com.typesafe.akka" %% "akka-http-testkit" % Versions.http % Test,
 
