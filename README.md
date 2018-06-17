@@ -53,3 +53,6 @@ ___
 > Testing parent-child actors -> [example](https://github.com/DarkDesire/akka-basics/tree/master/src/test/scala/parent_child)
 
 > FSM Actor Test -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/test/scala/UserStorageSpec.scala)
+___
+### Akka Streams [read here](https://doc.akka.io/docs/akka/current/stream/index.html)
+soon...
