@@ -1,0 +1,13 @@
+package parent_child
+
+import akka.actor.{Actor, ActorRef, ActorRefFactory}
+
+class Parent(childMaker: ActorRefFactory => ActorRef) extends Actor {
+  val child = childMaker(context)
+  var ponged = false
+
+  def receive: Receive = {
+    case "ping" => child ! "ping"
+    case "pong" => ponged = true
+  }
+}
