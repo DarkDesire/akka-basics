@@ -19,6 +19,7 @@ object Counter {
 
   case class State(count: Int)
 
+  case object GetCount
 }
 
 class Counter extends PersistentActor with ActorLogging {
@@ -72,6 +73,7 @@ class Counter extends PersistentActor with ActorLogging {
       persist(Evt(op)) { evt =>
         updateState(evt)
       }
+    case GetCount => sender() ! state.count
     case "print" =>
       log.debug(s"Counter: The current state is $state")
   }
