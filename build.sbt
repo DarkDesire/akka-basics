@@ -26,6 +26,10 @@ lazy val root = (project in file(".")).
 
       "com.typesafe.akka" %% "akka-remote" % Versions.akka,
 
+      "com.typesafe.akka" %% "akka-cluster" % Versions.akka,
+      "com.typesafe.akka" %% "akka-cluster-tools" % Versions.akka,
+      "com.typesafe.akka" %% "akka-cluster-sharding" % Versions.akka,
+
       "com.typesafe.akka" %% "akka-http" % Versions.http,
       "com.typesafe.akka" %% "akka-http-testkit" % Versions.http % Test,
 
