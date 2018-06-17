@@ -45,7 +45,22 @@ class CounterSpec extends TestKit(ActorSystem("test-system"))
     val counter = system.actorOf(Props[Counter])
     counter ! GetCount
     expectMsg(0)
-  }}
+  }
+  it should "handle sequence of messages" in {
+    val sender = TestProbe("testProbe")
+    val counter = system.actorOf(Props[Counter])
+    sender.send(counter, GetCount)
+    val state = sender.expectMsgType[Int]
+
+    sender.send(counter, Cmd(Counter.Increment(2)))
+    sender.send(counter, Cmd(Counter.Increment(4)))
+    sender.send(counter, Cmd(Counter.Decrement(3)))
+
+    sender.send(counter, GetCount)
+    val state2 = sender.expectMsgType[Int]
+    state2 mustEqual(state+3)
+  }
+}
 
 /*
 16:09:24.811 DEBUG persistent.counter.Counter - Starting ...
