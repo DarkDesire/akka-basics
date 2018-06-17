@@ -43,7 +43,7 @@ class UserStorage extends FSM[UserStorage.State, UserStorage.Data] with Stash wi
   }
 
   when(Connected){
-    case Event(Disconnected, _) =>
+    case Event(Disconnect, _) =>
       log.debug("UserStorage: disconnected from DB")
       goto(Disconnected) using EmptyData
     case Event(Operation(op,user),_) =>
