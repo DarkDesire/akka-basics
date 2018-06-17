@@ -6,6 +6,7 @@ lazy val Versions = new {
   val levelDB = "1.8"
   val iq80 = "0.7"
   val scalatest = "3.0.5"
+  val twitter4j = "4.0.6"
 }
 
 lazy val root = (project in file(".")).
@@ -43,6 +44,8 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-stream-testkit" % Versions.akka % Test,
 
       "org.scalactic" %% "scalactic" % Versions.scalatest,
-      "org.scalatest" %% "scalatest" % Versions.scalatest % "test"
+      "org.scalatest" %% "scalatest" % Versions.scalatest % "test",
+
+      "org.twitter4j" % "twitter4j-stream" % Versions.twitter4j
     )
   )
