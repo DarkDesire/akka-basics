@@ -46,3 +46,13 @@ ___
 ___
 ### Clustering [read here](https://doc.akka.io/docs/akka/current/index-cluster.html#clustering)
 > Simple Cluster App Example > [example](https://github.com/DarkDesire/akka-basics/blob/master/src/main/scala/cluster/simple)
+___
+### Testing Actor Systems [read here](https://doc.akka.io/docs/akka/current/testing.html)
+> Simple Actor Test -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/test/scala/CounterSpec.scala)
+
+> Testing parent-child actors -> [example](https://github.com/DarkDesire/akka-basics/tree/master/src/test/scala/parent_child)
+
+> FSM Actor Test -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/test/scala/UserStorageSpec.scala)
+___
+### Akka Streams [read here](https://doc.akka.io/docs/akka/current/stream/index.html)
+soon...
