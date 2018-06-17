@@ -45,4 +45,4 @@ ___
 > Simple Remoting Example > [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/remoting)
 ___
 ### Clustering [read here](https://doc.akka.io/docs/akka/current/index-cluster.html#clustering)
-soon...
+> Simple Cluster App Example > [example](https://github.com/DarkDesire/akka-basics/blob/master/src/main/scala/cluster/simple)
