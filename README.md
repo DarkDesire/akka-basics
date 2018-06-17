@@ -55,4 +55,11 @@ ___
 > FSM Actor Test -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/test/scala/UserStorageSpec.scala)
 ___
 ### Akka Streams [read here](https://doc.akka.io/docs/akka/current/stream/index.html)
-soon...
+> Simple Source App -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/main/scala/streams/SimpleSourceApp.scala)
+
+> Simple Stream App -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/main/scala/streams/SimpleStreamApp.scala)
+
+> Reactive Tweets App -> [example](https://github.com/DarkDesire/akka-basics/tree/master/src/main/scala/streams/reactive_tweets)
+// set your own twitter secret api keys via VM options in run configuration, like this `-DTwitter.apiKey="apiKey123123"` 
+
+> Graph Usage Example -> [example](https://github.com/DarkDesire/akka-basics/blob/master/src/main/scala/streams/graphs/GraphFlowApp.scala)
