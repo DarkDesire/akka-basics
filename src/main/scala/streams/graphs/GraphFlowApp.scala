@@ -33,3 +33,26 @@ object GraphFlowApp extends App {
 
   actorSystem.terminate()
 }
+
+/*
+65
+21
+70
+22
+75
+23
+80
+24
+85
+25
+90
+26
+95
+27
+100
+28
+105
+29
+110
+30
+ */
